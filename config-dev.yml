@@ -1,0 +1,24 @@
+app:
+  host: :8090
+  name: http://127.0.0.1:8090/cmsso/
+  login_page: http://127.0.0.1:8090/cmsso/static/index.html
+  exp: 30
+  cleanup_interval: 60
+  jwt_exp: 30
+mysql:
+  host: 127.0.0.1:3306
+  database: cmsso
+  user: root
+  password: 
+  max_idle_conns: 10
+  max_open_conns: 100
+
+mail:
+  from: 创明实验室
+  auth:
+    username: 用户名 
+    password: 密码
+    host: smtp.qq.com
+  addr: smtp.qq.com:25
+  exp: 30 # min
+
